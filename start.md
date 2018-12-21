@@ -29,5 +29,14 @@ python tools/test_lanenet.py --is_batch False --batch_size 1 --weights_path mode
 ```
 
 
+### train
+download the vgg16.npy  
+https://github.com/machrisaa/tensorflow-vgg
+change the PATH in data/training_data_example/train.txt and val.txt  
+change batch_size to 1 in /config/global_config.py
 
+### train script
+```bash
+python tools/train_lanenet.py --net vgg --dataset_dir data/training_data_example/
+```
 
